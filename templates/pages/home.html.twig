@@ -1,0 +1,25 @@
+{#Controller et template pages.html.twig creer grace à la commande : php bin/console make:controller dans le terminal#}
+{# On extend la base.html.twig ou se trouve la navbar #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    </br>
+    <h1>Bienvenue Voici la liste des Articles</h1>
+    </br>
+
+    <section class="articles">
+{#        Boucle for réalisée grâce à la fonction qui renvoie un tableau dans home dans le HomeController #}
+        {% for articles in article["hydra:member"] %}
+        <article>
+            <h2>{{ articles.name}}</h2>
+            <div class="metadata">Ecrit le {{ articles.createdAt | date('d/m/Y')}} à {{ articles.createdAt | date('H:i') }}</div>
+            <div class="content">
+                <img src="https://via.placeholder.com/150" alt="">
+                 {{ articles.content | raw }}
+                <p> {{ articles.price }} €</p>
+                    <a href="/show/{{ articles.id }}" class="btn btn-primary">Lire la suite</a>
+            </div>
+        </article>
+        {% endfor %}
+    </section>
+{% endblock %}

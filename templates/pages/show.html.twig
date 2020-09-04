@@ -1,0 +1,15 @@
+{# On creer une page qui mon un article précis par id #}
+{%  extends 'base.html.twig' %}
+
+{% block body %}
+    <article>
+        <h2>{{ articleById.name }}</h2>
+        <div class="metadata">Ecrit le {{ articleById.createdAt | date('d:m:Y') }} à {{ articleById.createdAt | date('H:i') }}</div>
+        <div class="content">
+            <img src="https://via.placeholder.com/150" alt="">
+            <p>{{articleById.content}}</p>
+            <hr>
+            <p> Le prix de l'article est de {{ articleById.price }} €</p>
+        </div>
+    </article>
+{% endblock %}
