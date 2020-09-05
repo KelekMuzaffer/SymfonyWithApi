@@ -33,9 +33,21 @@ class HomeController extends AbstractController
     {
       $response = $httpClient->request('GET','https://localhost:8001/api/articles/'.$id);
 
-
        return $this->render('pages/show.html.twig',[
            'articleById' => $response->toArray()
        ]);
+    }
+
+
+    /**
+     * @Route("/article/new",name="newArticle")
+     */
+    public function createArticle(HttpClientInterface $httpClient)
+    {
+
+        $article = $httpClient->request('POST','https://localhost:8001/api/articles');
+
+
+       $this->redirectToRoute('/');
     }
 }

@@ -17,7 +17,7 @@
                 <img src="https://via.placeholder.com/150" alt="">
                  {{ articles.content | raw }}
                 <p> {{ articles.price }} €</p>
-                    <a href="/show/{{ articles.id }}" class="btn btn-primary">Lire la suite</a>
+                    <a href="{{ path('article_show',{'id': articles.id}) }}" class="btn btn-primary">Lire la suite</a>
             </div>
         </article>
         {% endfor %}
