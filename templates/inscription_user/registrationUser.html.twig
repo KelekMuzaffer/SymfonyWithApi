@@ -3,9 +3,14 @@
 {#Page pour l'inscription d'un user#}
 
 {% block body %}
-{{ form_start(form) }}
+
+
+{{ form_start(form, {'action': path('InscriptionUser'), 'method': 'POST'}) }}
+    {%  if error is defined %}
+    {{ error }}
+    {% endif %}
     {{ form_widget(form)}}
-<button type="submit" class="btn btn-success">Inscription</button>
+
 
 
 {{ form_end(form) }}
