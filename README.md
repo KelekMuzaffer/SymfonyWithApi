@@ -44,7 +44,7 @@ Dans l'étape suivante bien recopier le passphrase créer dans le .env dans l'es
                 authenticators:
                     - lexik_jwt_authentication.jwt_token_authenticator "
                     
-## Si le token se rajoute tout seul dans les requête à l'Api rien à faire, si il y à des erreurs rajouté le token en paramètre (regarder l'exemple suivant ou chercher dans les controller) :
+##### Si le token se rajoute tout seul dans les requête à l'Api rien à faire, si il y à des erreurs rajouté le token en paramètre (regarder l'exemple suivant ou chercher dans les controller) :
 - $httpClient->request('PUT', 'http://127.0.0.1:8001/api/users/' . $id,
         [
         'headers' => [
