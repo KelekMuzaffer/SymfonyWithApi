@@ -20,13 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8332e0ba-776d-48f5-bc97-6d1059dc3cf4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/security_user/loginUser.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TestApi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TestApi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/InscriptionUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/InscriptionUserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationUserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegistrationUserType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/InscriptionUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/inscription_user/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/inscription_user/registrationUser.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inscription_user/registrationUser.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/inscription_user/registrationUser.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security_user/registrationUser.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +69,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/string" />
       <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
       <path value="$PROJECT_DIR$/vendor/symfony/validator" />
-      <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
       <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
       <path value="$PROJECT_DIR$/vendor/symfony/twig-bundle" />
@@ -142,6 +149,10 @@
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/lexik/jwt-authentication-bundle" />
+      <path value="$PROJECT_DIR$/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hAnJIXM7YUBymQ5Ze101b0IPAt" />
@@ -152,7 +163,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Projet/bookshop-api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Symfony-Api" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
@@ -168,7 +179,7 @@
       <workItem from="1599463459283" duration="1125000" />
       <workItem from="1599465025194" duration="898000" />
       <workItem from="1599466389833" duration="2252000" />
-      <workItem from="1599469050502" duration="19197000" />
+      <workItem from="1599469050502" duration="35669000" />
     </task>
     <servers />
   </component>
@@ -195,13 +206,21 @@
       <screen x="1680" y="0" width="1680" height="1010" />
     </state>
     <state x="2330" y="384" key="#Composer/-2560.-226.1280.700/1680.0.1680.1010/0.0.1680.1010@1680.0.1680.1010" timestamp="1599462751819" />
-    <state x="2300" y="260" key="FileChooserDialogImpl" timestamp="1599467388570">
+    <state x="1680" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599549266713">
       <screen x="1680" y="0" width="1680" height="1010" />
     </state>
-    <state x="2300" y="260" key="FileChooserDialogImpl/-2560.-226.1280.700/1680.0.1680.1010/0.0.1680.1010@1680.0.1680.1010" timestamp="1599467388570" />
+    <state x="1680" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-2560.-226.1280.700/1680.0.1680.1010/0.0.1680.1010@1680.0.1680.1010" timestamp="1599549266713" />
+    <state x="2300" y="260" key="FileChooserDialogImpl" timestamp="1599558913668">
+      <screen x="1680" y="0" width="1680" height="1010" />
+    </state>
+    <state x="2300" y="260" key="FileChooserDialogImpl/-2560.-226.1280.700/1680.0.1680.1010/0.0.1680.1010@1680.0.1680.1010" timestamp="1599558913668" />
     <state x="526" y="228" key="NewPhpClassDialog" timestamp="1599483336978">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="526" y="228" key="NewPhpClassDialog/-2560.-226.1280.700/1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1599483336978" />
+    <state x="2008" y="0" width="819" height="800" key="dock-window-1" timestamp="1599555355058">
+      <screen x="1680" y="0" width="1680" height="1010" />
+    </state>
+    <state x="2008" y="0" width="819" height="800" key="dock-window-1/-2560.-226.1280.700/1680.0.1680.1010/0.0.1680.1010@1680.0.1680.1010" timestamp="1599555355058" />
   </component>
 </project>

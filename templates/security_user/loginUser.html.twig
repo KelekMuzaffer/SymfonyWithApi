@@ -1,0 +1,18 @@
+{% extends('base.html.twig') %}
+
+{#Page pour login un user#}
+
+{% block body %}
+
+    {{ form_start(formLogin, {'action': path('loginUser'), 'method': 'POST'}) }}
+
+    {%  if error is defined %}
+        {{ error }}
+    {% endif %}
+
+    {{ form_widget(formLogin)}}
+
+    {{ form_end(formLogin) }}
+
+
+{% endblock %}

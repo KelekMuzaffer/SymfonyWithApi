@@ -5,14 +5,14 @@
 {% block body %}
 
 
-{{ form_start(form, {'action': path('InscriptionUser'), 'method': 'POST'}) }}
+{{ form_start(formRegister, {'action': path('InscriptionUser'), 'method': 'POST'}) }}
+
     {%  if error is defined %}
     {{ error }}
     {% endif %}
-    {{ form_widget(form)}}
 
+    {{ form_widget(formRegister)}}
 
-
-{{ form_end(form) }}
+{{ form_end(formRegister) }}
 
 {% endblock %}
