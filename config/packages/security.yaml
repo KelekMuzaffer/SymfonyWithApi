@@ -15,6 +15,11 @@ security:
                 authenticators:
                     - lexik_jwt_authentication.jwt_token_authenticator
 
+            logout:
+                path: security_logout
+                target: loginUser
+                delete_cookies: ['BEARER']
+
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#firewalls-authentication
 

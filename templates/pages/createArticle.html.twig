@@ -4,10 +4,14 @@
 
     <h1>Céer un nouvel article</h1>
 
-    {{ form_start(form,{path('newArticle'), 'method': 'POST' }) }}
+    {{ form_start(formNewArticle ,{'action': path('newArticle'), 'method': 'POST' }) }}
 
-    {{ include('forms/formNewArticle.html.twig') }}
+    {%  if error is defined %}
+        {{ error }}
+    {% endif %}
 
-    {{ form_end(form) }}
+    {{ form_widget(formNewArticle)}}
+
+    {{ form_end(formNewArticle) }}
 
 {% endblock %}

@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 
-use Lexik\Bundle\JWTAuthenticationBundle\Security\Authentication\Token\JWTUserToken;
+use App\Form\NewArticleType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
@@ -53,12 +53,37 @@ class HomeController extends AbstractController
     /**
      * @Route("/article/new",name="newArticle")
      */
-    public function createArticle(HttpClientInterface $httpClient)
+    public function createArticle(HttpClientInterface $httpClient, Request $request)
     {
+        $token = $request->cookies->get('BEARER');
+        $form = $this->createForm(NewArticleType::class);
+        $form->handleRequest($request);
 
-        $article = $httpClient->request('POST','https://localhost:8001/api/articles');
+        $error = null;
+        if ($request->isMethod('POST'))
+        {
+            try {
+                $formdata = $form->getData();
+                $article = $httpClient->request('POST','https://localhost:8001/api/articles',
+                    [
+                        'headers' => [
+                            'Authorization' => 'Bearer '.$token,
+                        ],
 
-
-       $this->redirectToRoute('/');
+                        'json' => [ 'name' => $formdata['name'], 'content' => $formdata['content'], 'price' => intval($formdata['price'])]
+                    ]);
+                return $this->redirectToRoute('home');
+            }
+            catch (\Throwable $e)
+            {
+                return $this->render('pages/createArticle.html.twig',[
+                   'formNewArticle' => $form->createView(),
+                   'error' => 'Cet article existe déjà!'
+                ]);
+            }
+        }
+        return $this->render('pages/createArticle.html.twig', [
+            'formNewArticle' => $form->createView()
+        ]);
     }
 }

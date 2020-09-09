@@ -54,7 +54,7 @@ class SecurityUserController extends AbstractController
         $form->handleRequest($request);
 
         $error = null;
-        if ($form->isSubmitted() && $form->isValid()) {
+        if ($request->isMethod('POST')) {
 
             try {
                 $formdata = $form->getData();
@@ -78,4 +78,8 @@ class SecurityUserController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route ("/deconnexion", name="security_logout")
+     */
+    public function logout() {}
 }
