@@ -50,3 +50,9 @@ Dans l'étape suivante bien recopier le passphrase créer dans le .env dans l'es
         'headers' => [
             'Authorization' => 'Bearer '.$token,
         ],
+
+
+# Ressource :
+- La doc de Symfony
+- La doc Lexik_jwt sur google choisir le 1er lien qui renvoie sur git 
+- Youtube : https://www.youtube.com/watch?v=UTusmVpwJXo&list=PLpUhHhXoxrjdQLodxlHFY09_9XzqdPBW8&index=1
