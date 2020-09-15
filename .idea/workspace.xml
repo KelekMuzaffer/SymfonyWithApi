@@ -21,11 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8332e0ba-776d-48f5-bc97-6d1059dc3cf4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityUserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/createArticle.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/createArticle.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +150,7 @@
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Symfony-Api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
@@ -171,7 +166,10 @@
       <workItem from="1599463459283" duration="1125000" />
       <workItem from="1599465025194" duration="898000" />
       <workItem from="1599466389833" duration="2252000" />
-      <workItem from="1599469050502" duration="43674000" />
+      <workItem from="1599469050502" duration="47397000" />
+      <workItem from="1599722084435" duration="3753000" />
+      <workItem from="1599806834384" duration="604000" />
+      <workItem from="1600172341832" duration="342000" />
     </task>
     <servers />
   </component>
@@ -206,10 +204,10 @@
       <screen x="1680" y="0" width="1680" height="1010" />
     </state>
     <state x="2250" y="260" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-2560.-226.1280.700/1680.0.1680.1010/0.0.1680.1010@1680.0.1680.1010" timestamp="1599576158654" />
-    <state x="2300" y="260" key="FileChooserDialogImpl" timestamp="1599558913668">
+    <state x="2300" y="260" key="FileChooserDialogImpl" timestamp="1599746938496">
       <screen x="1680" y="0" width="1680" height="1010" />
     </state>
-    <state x="2300" y="260" key="FileChooserDialogImpl/-2560.-226.1280.700/1680.0.1680.1010/0.0.1680.1010@1680.0.1680.1010" timestamp="1599558913668" />
+    <state x="2300" y="260" key="FileChooserDialogImpl/-2560.-226.1280.700/1680.0.1680.1010/0.0.1680.1010@1680.0.1680.1010" timestamp="1599746938496" />
     <state x="526" y="228" key="NewPhpClassDialog" timestamp="1599483336978">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
